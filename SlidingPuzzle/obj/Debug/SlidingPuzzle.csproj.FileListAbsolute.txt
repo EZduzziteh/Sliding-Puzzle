@@ -1,0 +1,9 @@
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\bin\Debug\SlidingPuzzle.exe.config
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\bin\Debug\SlidingPuzzle.exe
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\bin\Debug\SlidingPuzzle.pdb
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.csprojAssemblyReference.cache
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.MainForm.resources
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.Properties.Resources.resources
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.csproj.GenerateResource.cache
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.exe
+D:\repos\RapidAppDev\SlidingPuzzle\SlidingPuzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.pdb
