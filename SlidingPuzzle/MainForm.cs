@@ -20,6 +20,7 @@ namespace SlidingPuzzle
         public List<PuzzlePiece> sortedPieceList= new List<PuzzlePiece>();
         public List<Button> buttonList = new List<Button>();
         bool gridInitialized = false;
+        
         public void StartGame()
         {
 
@@ -58,8 +59,8 @@ namespace SlidingPuzzle
                     button.Location = new Point(i * 110, j * 110);
                     button.Click += Button_ClickedEvent;
                     this.Controls.Add(button);
-
                     buttonList.Add(button);
+
 
                     PuzzlePiece piece = new PuzzlePiece();
                     piece.Name = "piece " + buttonCount;
@@ -103,12 +104,8 @@ namespace SlidingPuzzle
         public void ResetGame()
         {
             sortedPieceList.Clear();
-            btn_Start.Visible = true;
-            cmb_Difficulty.Visible = true;
-            lbl_instructions.Visible = true;
-            text_instructions.Visible = true;
-            lbl_difficulty.Visible = true;
-            text_difficulty.Visible = true;
+            panel_MainMenu.Visible = true;
+            panel_Victory.Visible = false;
             gameManager.pieces.Clear();
             sortedPieceList.Clear();
             foreach (Button button in buttonList)
@@ -124,6 +121,7 @@ namespace SlidingPuzzle
             cmb_Difficulty.Items.Add("Easy");
             cmb_Difficulty.Items.Add("Medium");
             cmb_Difficulty.Items.Add("Hard");
+            panel_Victory.Visible = false;
 
         }
 
@@ -181,12 +179,14 @@ namespace SlidingPuzzle
 
             if (hasWon)
             {
-                lbl_victory.Text = "Congratulations! you won! Total move count: "+gameManager.scoreTracker.GetMoveCount();
+                panel_Victory.Visible = true;
+                textBox_Victory.Text = "Congratulations! you won! Total move count: "+gameManager.scoreTracker.GetMoveCount();
                 gameManager.scoreTracker.SetHighScore(gameManager.scoreTracker.GetMoveCount());
+                
             }
             else
             {
-                lbl_victory.Text = "Victory not yet achieved!";
+                textBox_Victory.Text = "Victory not yet achieved!";
             }
         }
         public void ShufflePieces()
@@ -206,13 +206,28 @@ namespace SlidingPuzzle
         private void btn_Start_Click(object sender, EventArgs e)
         {
             difficulty = cmb_Difficulty.SelectedIndex;
-            btn_Start.Visible = false;
-            cmb_Difficulty.Visible = false;
-            lbl_instructions.Visible = false;
-            text_instructions.Visible = false;
-            lbl_difficulty.Visible = false;
-            text_difficulty.Visible = false;
+            //This if statement just handles the default case where the player doesn't select a difficulty or somehow difficulty becomes greater than hard
+            if (difficulty < 0 ||difficulty>2)
+            {
+                difficulty = 0;
+            }
+            panel_MainMenu.Visible = false;
             StartGame();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Victory_Restart_Click(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
+
+        private void button_Victory_Quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     public class ScoreTracker

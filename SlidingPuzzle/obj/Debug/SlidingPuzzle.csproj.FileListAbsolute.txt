@@ -16,3 +16,7 @@ D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.Proper
 D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.csproj.GenerateResource.cache
 D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.exe
 D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.pdb
+D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\bin\Debug\SlidingPuzzle.exe.manifest
+D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\bin\Debug\SlidingPuzzle.application
+D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.exe.manifest
+D:\repos\RapidAppDev\Sliding-Puzzle\SlidingPuzzle\obj\Debug\SlidingPuzzle.application
